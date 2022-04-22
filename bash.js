@@ -1,8 +1,5 @@
-process.stdout.write('prompt > ');
+const pwd = require('./pwd');
+const ls = require('./ls');
 
-process.stdin.on('data', (data) => {
-  const pwd = process.env.PWD;
-
-  process.stdout.write(pwd); //output?
-  process.stdout.write('\nprompt > ');
-})
+pwd();
+ls();
